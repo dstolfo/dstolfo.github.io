@@ -16,15 +16,28 @@ function App() {
           sx={{
             position: 'absolute',
             top: '50%', // Vertically center the box
-            right: '15%', // Slightly off the right edge of the screen
-            transform: 'translateY(-50%)', // Correct for centering
+            left: {
+				xs: '50%', // Horizontally center the box for xsmall screen
+				sm: '50%', // Horizontally center the box for small screens
+				md: '70%', // Align to the right on medium screens
+			},
+            transform: 'translate(-50%, -50%)', // Correct for centering
             backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark semi-transparent background for visibility
             borderRadius: '15px', // Rounded corners
-            padding: '10px', // Some padding inside the box
             color: 'white', // Text color
             boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)', // Optional shadow for the box
             zIndex: 1000, // Ensure the box is on top of the map
-            width: '25%', // Set the width for the box
+            width: {
+              xs: '90%', // 90% width on extra small screens (mobile)
+              sm: '80%', // 80% width on small screens (tablets)
+              md: '25%', // 25% width on medium screens (desktops)
+            },
+            maxWidth: '400px', // Maximum width to prevent the card from growing too large
+            padding: {
+              xs: '20px', // More padding on small screens
+              sm: '15px', // Medium padding on medium screens
+              md: '10px', // Less padding on large screens
+            },
           }}
         >
           <CardContent sx={{ '&:last-child': { paddingBottom: '16px' } }}>
