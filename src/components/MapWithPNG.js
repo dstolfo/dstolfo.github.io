@@ -30,7 +30,7 @@ const MapWithPNG = () => {
 
       // Function to load and handle PNG data
       const loadPNG = () => {
-        const pngUrl = 'images/20250321_4326.png';
+        const pngUrl = process.env.PUBLIC_URL + '/images/20250321_4326.png';  // This works both locally and when deployed
 
         // Define the bounds (coordinates for the image's corners)
         const overlayBounds = [
