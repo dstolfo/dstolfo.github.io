@@ -1,7 +1,7 @@
 {
   "name": "dstolfo",
   "version": "0.1.0",
-  "homepage": "https://dstolfo.github.io/dstolfo",
+  "homepage": "https://dstolfo.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
