@@ -1,6 +1,6 @@
 import React from 'react';
 import { CssBaseline, Box } from '@mui/material';
-import MapWithPNG from './components/MapWithPNG';
+import HeroMap from './components/HeroMap';
 import ProfileCard from './components/ProfileCard';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <CssBaseline />
       {/* Box container to ensure the full-page layout */}
       <Box sx={{ height: '100vh', width: '100%', position: 'relative' }}>
-        <MapWithPNG />
+        <HeroMap />
         <ProfileCard />
       </Box>
     </>
