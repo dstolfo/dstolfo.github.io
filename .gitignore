@@ -135,5 +135,13 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Ignore macOS .DS_Store files
+# Build output
+/build
+/dist
+
+# .env files
+.env
+
+# OS-specific files
 .DS_Store
+Thumbs.db
